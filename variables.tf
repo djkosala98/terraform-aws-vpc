@@ -29,7 +29,7 @@ variable "availability_zones" {
 variable "create_private_subnets" {
   description = "Indicates to create private subnets."
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "create_private_hosted_zone" {
@@ -41,7 +41,7 @@ variable "create_private_hosted_zone" {
 variable "public_subnet_map_public_ip_on_launch" {
   description = "Enable public ip creaton by default on EC2 instance launch."
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "create_s3_vpc_endpoint" {
